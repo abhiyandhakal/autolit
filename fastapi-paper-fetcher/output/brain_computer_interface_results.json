@@ -1,0 +1,58 @@
+[
+    {
+        "API": "Semantic Scholar",
+        "Title": "State-of-the-Art on Brain-Computer Interface Technology",
+        "Authors": [
+            "J\u0101nis Pek\u0161a",
+            "D. Mamchur"
+        ],
+        "Text": "Error downloading paper: name 'requests' is not defined"
+    },
+    {
+        "API": "Semantic Scholar",
+        "Title": "Brain\u2013computer interface: trend, challenges, and threats",
+        "Authors": [
+            "B. Maiseli",
+            "Abdi T. Abdalla",
+            "L. Massawe",
+            "M. Mbise",
+            "K. Mkocha",
+            "N. Nassor",
+            "Moses Ismail",
+            "James Michael",
+            "Samwel Kimambo"
+        ],
+        "Text": "Error downloading paper: name 'requests' is not defined"
+    },
+    {
+        "API": "Semantic Scholar",
+        "Title": "BCI2000: a general-purpose brain-computer interface (BCI) system",
+        "Authors": [
+            "G. Schalk",
+            "D. McFarland",
+            "T. Hinterberger",
+            "N. Birbaumer",
+            "J. Wolpaw"
+        ],
+        "Text": "Error downloading paper: name 'requests' is not defined"
+    },
+    {
+        "API": "Semantic Scholar",
+        "Title": "Human emotion recognition from EEG-based brain\u2013computer interface using machine learning: a comprehensive review",
+        "Authors": [
+            "Essam H. Houssein",
+            "A. Hammad",
+            "Abdelmgeid A. Ali"
+        ],
+        "Text": "Error downloading paper: name 'requests' is not defined"
+    },
+    {
+        "API": "Semantic Scholar",
+        "Title": "Review of Machine Learning Techniques for EEG Based Brain Computer Interface",
+        "Authors": [
+            "Swati Aggarwal",
+            "Nupur Chugh"
+        ],
+        "Text": "Error downloading paper: name 'requests' is not defined"
+    }
+]
