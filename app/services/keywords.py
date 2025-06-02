@@ -23,6 +23,7 @@ def keyword_gen(title: str, abstract: str) -> list[str]:
     })
 
     if not res.ok:
+        print(res.json())
         raise HTTPException(status_code=500)
 
     res = res.json()

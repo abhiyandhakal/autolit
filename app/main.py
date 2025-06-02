@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
 
-from app.keyword_gen import keyword_gen
+from app.services.keywords import keyword_gen
 from app.models.keyword import KeywordsReqBody
 load_dotenv()
 
