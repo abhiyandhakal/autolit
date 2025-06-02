@@ -1,0 +1,211 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2111.11295v1",
+        "title": "Artificial Intelligence Technology analysis using Artificial\n  Intelligence patent through Deep Learning model and vector space model",
+        "summary": "Thanks to rapid development of artificial intelligence technology in recent\nyears, the current artificial intelligence technology is contributing to many\npart of society. Education, environment, medical care, military, tourism,\neconomy, politics, etc. are having a very large impact on society as a whole.\nFor example, in the field of education, there is an artificial intelligence\ntutoring system that automatically assigns tutors based on student's level. In\nthe field of economics, there are quantitative investment methods that\nautomatically analyze large amounts of data to find investment laws to create\ninvestment models or predict changes in financial markets. As such, artificial\nintelligence technology is being used in various fields. So, it is very\nimportant to know exactly what factors have an important influence on each\nfield of artificial intelligence technology and how the relationship between\neach field is connected. Therefore, it is necessary to analyze artificial\nintelligence technology in each field. In this paper, we analyze patent\ndocuments related to artificial intelligence technology. We propose a method\nfor keyword analysis within factors using artificial intelligence patent data\nsets for artificial intelligence technology analysis. This is a model that\nrelies on feature engineering based on deep learning model named KeyBERT, and\nusing vector space model. A case study of collecting and analyzing artificial\nintelligence patent data was conducted to show how the proposed model can be\napplied to real world problems.",
+        "published": "2021-11-08T00:10:49Z",
+        "updated": "2021-11-08T00:10:49Z",
+        "authors": [
+            "Yongmin Yoo",
+            "Dongjin Lim",
+            "Kyungsun Kim"
+        ],
+        "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/2111.11295v1",
+            "related": "http://arxiv.org/pdf/2111.11295v1"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.3137v1",
+        "title": "Rule reasoning for legal norm validation of FSTP facts",
+        "summary": "Non-obviousness or inventive step is a general requirement for patentability\nin most patent law systems. An invention should be at an adequate distance\nbeyond its prior art in order to be patented. This short paper provides an\noverview on a methodology proposed for legal norm validation of FSTP facts\nusing rule reasoning approach.",
+        "published": "2014-12-05T21:03:53Z",
+        "updated": "2014-12-05T21:03:53Z",
+        "authors": [
+            "Naouel Karam",
+            "Shashishekar Ramakrishna",
+            "Adrian Paschke"
+        ],
+        "categories": [
+            "cs.AI",
+            "K.6.3; D.2.5; F.4.1"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/1412.3137v1",
+            "related": "http://arxiv.org/pdf/1412.3137v1"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.07328v1",
+        "title": "An Ontological AI-and-Law Framework for the Autonomous Levels of AI\n  Legal Reasoning",
+        "summary": "A framework is proposed that seeks to identify and establish a set of robust\nautonomous levels articulating the realm of Artificial Intelligence and Legal\nReasoning (AILR). Doing so provides a sound and parsimonious basis for being\nable to assess progress in the application of AI to the law, and can be\nutilized by scholars in academic pursuits of AI legal reasoning, along with\nbeing used by law practitioners and legal professionals in gauging how advances\nin AI are aiding the practice of law and the realization of aspirational versus\nachieved results. A set of seven levels of autonomy for AI and Legal Reasoning\nare meticulously proffered and mindfully discussed.",
+        "published": "2020-08-04T16:12:30Z",
+        "updated": "2020-08-04T16:12:30Z",
+        "authors": [
+            "Lance Eliot"
+        ],
+        "categories": [
+            "cs.CY",
+            "cs.AI",
+            "I.2.0; J.7.0; K.5.9"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/2008.07328v1",
+            "related": "http://arxiv.org/pdf/2008.07328v1"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.06367v2",
+        "title": "Synergetic Learning Systems: Concept, Architecture, and Algorithms",
+        "summary": "Drawing on the idea that brain development is a Darwinian process of\n``evolution + selection'' and the idea that the current state is a local\nequilibrium state of many bodies with self-organization and evolution processes\ndriven by the temperature and gravity in our universe, in this work, we\ndescribe an artificial intelligence system called the ``Synergetic Learning\nSystems''. The system is composed of two or more subsystems (models, agents or\nvirtual bodies), and it is an open complex giant system. Inspired by natural\nintelligence, the system achieves intelligent information processing and\ndecision-making in a given environment through cooperative/competitive\nsynergetic learning. The intelligence evolved by the natural law of ``it is not\nthe strongest of the species that survives, but the one most responsive to\nchange,'' while an artificial intelligence system should adopt the law of\n``human selection'' in the evolution process. Therefore, we expect that the\nproposed system architecture can also be adapted in human-machine synergy or\nmulti-agent synergetic systems. It is also expected that under our design\ncriteria, the proposed system will eventually achieve artificial general\nintelligence through long term coevolution.",
+        "published": "2020-05-31T06:23:03Z",
+        "updated": "2020-06-14T10:19:17Z",
+        "authors": [
+            "Ping Guo",
+            "Qian Yin"
+        ],
+        "categories": [
+            "cs.NE",
+            "cs.AI"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/2006.06367v2",
+            "related": "http://arxiv.org/pdf/2006.06367v2"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/2503.17894v2",
+        "title": "Generative AI for Validating Physics Laws",
+        "summary": "We present generative artificial intelligence (AI) to empirically validate\nfundamental laws of physics, focusing on the Stefan-Boltzmann law linking\nstellar temperature and luminosity. Our approach simulates counterfactual\nluminosities under hypothetical temperature regimes for each individual star\nand iteratively refines the temperature-luminosity relationship in a deep\nlearning architecture. We use Gaia DR3 data and find that, on average,\ntemperature's effect on luminosity increases with stellar radius and decreases\nwith absolute magnitude, consistent with theoretical predictions. By framing\nphysics laws as causal problems, our method offers a novel, data-driven\napproach to refine theoretical understanding and inform evidence-based policy\nand practice.",
+        "published": "2025-03-23T00:57:26Z",
+        "updated": "2025-03-25T14:31:47Z",
+        "authors": [
+            "Maria Nareklishvili",
+            "Nicholas Polson",
+            "Vadim Sokolov"
+        ],
+        "categories": [
+            "astro-ph.SR",
+            "astro-ph.GA",
+            "cs.AI"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/2503.17894v2",
+            "related": "http://arxiv.org/pdf/2503.17894v2"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.09115v2",
+        "title": "Compositional Law Parsing with Latent Random Functions",
+        "summary": "Human cognition has compositionality. We understand a scene by decomposing\nthe scene into different concepts (e.g., shape and position of an object) and\nlearning the respective laws of these concepts, which may be either natural\n(e.g., laws of motion) or man-made (e.g., laws of a game). The automatic\nparsing of these laws indicates the model's ability to understand the scene,\nwhich makes law parsing play a central role in many visual tasks. This paper\nproposes a deep latent variable model for Compositional LAw Parsing (CLAP),\nwhich achieves the human-like compositionality ability through an\nencoding-decoding architecture to represent concepts in the scene as latent\nvariables. CLAP employs concept-specific latent random functions instantiated\nwith Neural Processes to capture the law of concepts. Our experimental results\ndemonstrate that CLAP outperforms the baseline methods in multiple visual tasks\nsuch as intuitive physics, abstract visual reasoning, and scene representation.\nThe law manipulation experiments illustrate CLAP's interpretability by\nmodifying specific latent random functions on samples. For example, CLAP learns\nthe laws of position-changing and appearance constancy from the moving balls in\na scene, making it possible to exchange laws between samples or compose\nexisting laws into novel laws.",
+        "published": "2022-09-15T06:57:23Z",
+        "updated": "2023-02-25T08:26:16Z",
+        "authors": [
+            "Fan Shi",
+            "Bin Li",
+            "Xiangyang Xue"
+        ],
+        "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/2209.09115v2",
+            "related": "http://arxiv.org/pdf/2209.09115v2"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.02724v1",
+        "title": "Human Indignity: From Legal AI Personhood to Selfish Memes",
+        "summary": "It is possible to rely on current corporate law to grant legal personhood to\nArtificially Intelligent (AI) agents. In this paper, after introducing pathways\nto AI personhood, we analyze consequences of such AI empowerment on human\ndignity, human safety and AI rights. We emphasize possibility of creating\nselfish memes and legal system hacking in the context of artificial entities.\nFinally, we consider some potential solutions for addressing described\nproblems.",
+        "published": "2018-10-02T20:01:43Z",
+        "updated": "2018-10-02T20:01:43Z",
+        "authors": [
+            "Roman V. Yampolskiy"
+        ],
+        "categories": [
+            "cs.GL",
+            "cs.AI",
+            "cs.CY"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/1810.02724v1",
+            "related": "http://arxiv.org/pdf/1810.02724v1"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.12470v5",
+        "title": "Teaching AI, Ethics, Law and Policy",
+        "summary": "The cyberspace and development of intelligent systems using Artificial\nIntelligence (AI) creates new challenges to computer professionals, data\nscientists, regulators and policy makers. For example, self-driving cars raise\nnew technical, ethical, legal and public policy issues. This paper proposes a\ncourse named Computers, Ethics, Law, and Public Policy, and suggests a\ncurriculum for such a course. This paper presents ethical, legal, and public\npolicy issues relevant to building and using intelligent systems.",
+        "published": "2019-04-29T07:01:50Z",
+        "updated": "2019-08-30T16:13:44Z",
+        "authors": [
+            "Asher Wilk"
+        ],
+        "categories": [
+            "cs.CY",
+            "cs.AI",
+            "cs.LG",
+            "cs.SE",
+            "K.4; K.4.1; K.5; K.5.2; K.3.2; K.7.4; I.2; I.2.9"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/1904.12470v5",
+            "related": "http://arxiv.org/pdf/1904.12470v5"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.08430v1",
+        "title": "Power-law Scaling to Assist with Key Challenges in Artificial\n  Intelligence",
+        "summary": "Power-law scaling, a central concept in critical phenomena, is found to be\nuseful in deep learning, where optimized test errors on handwritten digit\nexamples converge as a power-law to zero with database size. For rapid decision\nmaking with one training epoch, each example is presented only once to the\ntrained network, the power-law exponent increased with the number of hidden\nlayers. For the largest dataset, the obtained test error was estimated to be in\nthe proximity of state-of-the-art algorithms for large epoch numbers. Power-law\nscaling assists with key challenges found in current artificial intelligence\napplications and facilitates an a priori dataset size estimation to achieve a\ndesired test accuracy. It establishes a benchmark for measuring training\ncomplexity and a quantitative hierarchy of machine learning tasks and\nalgorithms.",
+        "published": "2022-11-15T12:42:38Z",
+        "updated": "2022-11-15T12:42:38Z",
+        "authors": [
+            "Yuval Meir",
+            "Shira Sardi",
+            "Shiri Hodassman",
+            "Karin Kisos",
+            "Itamar Ben-Noam",
+            "Amir Goldental",
+            "Ido Kanter"
+        ],
+        "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+        ],
+        "links": {
+            "related": "http://arxiv.org/pdf/2211.08430v1",
+            "alternate": "http://arxiv.org/abs/2211.08430v1"
+        }
+    },
+    {
+        "id": "http://arxiv.org/abs/2505.10559v1",
+        "title": "Neural Thermodynamic Laws for Large Language Model Training",
+        "summary": "Beyond neural scaling laws, little is known about the laws underlying large\nlanguage models (LLMs). We introduce Neural Thermodynamic Laws (NTL) -- a new\nframework that offers fresh insights into LLM training dynamics. On the\ntheoretical side, we demonstrate that key thermodynamic quantities (e.g.,\ntemperature, entropy, heat capacity, thermal conduction) and classical\nthermodynamic principles (e.g., the three laws of thermodynamics and the\nequipartition theorem) naturally emerge under river-valley loss landscape\nassumptions. On the practical side, this scientific perspective yields\nintuitive guidelines for designing learning rate schedules.",
+        "published": "2025-05-15T17:59:22Z",
+        "updated": "2025-05-15T17:59:22Z",
+        "authors": [
+            "Ziming Liu",
+            "Yizhou Liu",
+            "Jeff Gore",
+            "Max Tegmark"
+        ],
+        "categories": [
+            "cs.LG",
+            "cs.AI",
+            "physics.data-an",
+            "stat.ML"
+        ],
+        "links": {
+            "alternate": "http://arxiv.org/abs/2505.10559v1",
+            "related": "http://arxiv.org/pdf/2505.10559v1"
+        }
+    }
+]

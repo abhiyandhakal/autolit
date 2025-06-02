@@ -50,13 +50,23 @@ def fetch_arxiv_data(query: str, start: int = 0, max_results: int = 10):
         papers = []
 
         for entry in entries:
+            authors_data = entry.get('author', [])
+            if isinstance(authors_data, dict):
+                authors = [authors_data.get('name', '')]
+            elif isinstance(authors_data, list):
+                authors = [author.get('name', '') for author in authors_data]
+            elif isinstance(authors_data, str):
+                authors = [authors_data]
+            else:
+                authors = []
+                
             paper = {
                 'id': entry.get('id', ''),
                 'title': entry.get('title', ''),
                 'summary': entry.get('summary', ''),
                 'published': entry.get('published', ''),
                 'updated': entry.get('updated', ''),
-                'authors': [author.get('name', '') for author in entry.get('author', [])],
+                'authors': authors, 
                 'categories': [category.get('@term', '') for category in entry.get('category', [])],
                 'links': {link.get('@rel', ''): link.get('@href', '') for link in entry.get('link', [])}
             }
