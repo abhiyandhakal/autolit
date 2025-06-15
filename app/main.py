@@ -33,3 +33,18 @@ async def related_works(body: KeywordsReqBody):
         papers = papers + retrieve_papers(keyword=keyword)
 
     return papers
+
+@app.post(
+    "/top-related-works",
+    description="Get the top 10 related works from the given sets of keywords",
+)
+
+async def top_related_works(body: KeywordsReqBody):
+    keywords = keyword_gen(title=body.title, abstract=body.abstract)
+    papers = []
+    for keyword in keywords:
+        papers = papers + retrieve_papers(keyword=keyword)
+    
+    best_related_papers = top_retrieve_paper(title=body.title, abstract=body.abstract, related_papers=papers, top_k=10)
+        
+    return best_related_papers
