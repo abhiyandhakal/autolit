@@ -3,9 +3,9 @@ from sentence_transformers import SentenceTransformer, util
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-def top_retrieve_paper(title: str, abstract: str, related_papers: List[Dict], top_k: int = 10) -> List[Dict[str,str]]:
+def top_retrieve_paper(title: str, abstract: str, related_papers: List[Dict], top_k: int = 20) -> List[Dict[str,str]]:
     '''
-    Retrieve the top 10 related papers based on the title and abstract of a given paper.
+    Retrieve the top k related papers based on the title and abstract of a given paper.
     '''
     if not related_papers:
         return []
@@ -32,17 +32,7 @@ def top_retrieve_paper(title: str, abstract: str, related_papers: List[Dict], to
 
     top_indices = cosine_scores.topk(k=min(top_k, len(related_papers))).indices
 
-    top_papers = []
+    top_papers = [related_papers[int(index)] for index in top_indices]
     
-    for index in top_indices:
-        paper_title = related_papers[index]['title']
-        paper_abstract = related_papers[index]['summary']
-        paper_link = related_papers[index]['links']
-    
-        top_papers.append({
-            'title': paper_title.strip(),
-            'abstract': paper_abstract.strip(),
-        })
-
     return top_papers
 
