@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from app.services.paper_retrieval import retrieve_papers
 from app.services.keywords import keyword_gen
 from app.models.keyword import KeywordsReqBody
+from app.services.top_paper_retrieval import top_retrieve_paper
 load_dotenv()
 
 app = FastAPI()

@@ -1,7 +1,9 @@
 import os
 from fastapi import HTTPException
 import requests
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def keyword_gen(title: str, abstract: str) -> list[str]:
     GEMINI_API_URL = os.environ.get("GEMINI_API_URL") or ""
