@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer, util
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-def top_retrieve_paper(title: str, abstract: str, related_papers: List[Dict], top_k: int = 20) -> List[Dict[str,str]]:
+def retrieve_relevant_papers(title: str, abstract: str, related_papers: List[Dict]) -> List[Dict[str,str]]:
     '''
     Retrieve the top k related papers based on the title and abstract of a given paper.
     '''
@@ -29,10 +29,9 @@ def top_retrieve_paper(title: str, abstract: str, related_papers: List[Dict], to
     # Compute cosine similarities
 
     cosine_scores = util.cos_sim(query_embedding, paper_embeddings)[0]
+    print("cosine_scores", cosine_scores)
 
-    top_indices = cosine_scores.topk(k=min(top_k, len(related_papers))).indices
+    relevant_indices = (cosine_scores >= 0.6).nonzero(as_tuple=True)[0]
+    relevant_papers = [related_papers[i] for i in relevant_indices.tolist()]
 
-    top_papers = [related_papers[int(index)] for index in top_indices]
-    
-    return top_papers
-
+    return relevant_papers

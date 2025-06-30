@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from app.services.paper_retrieval import retrieve_papers
 from app.services.keywords import keyword_gen
 from app.models.keyword import KeywordsReqBody
-from app.services.top_paper_retrieval import top_retrieve_paper
+from app.services.top_paper_retrieval import retrieve_relevant_papers
 load_dotenv()
 
 app = FastAPI()
@@ -46,6 +46,6 @@ async def top_related_works(body: KeywordsReqBody):
     for keyword in keywords:
         papers = papers + retrieve_papers(keyword=keyword)
     
-    best_related_papers = top_retrieve_paper(title=body.title, abstract=body.abstract, related_papers=papers, top_k=10)
+    best_related_papers = retrieve_relevant_papers(title=body.title, abstract=body.abstract, related_papers=papers, top_k=10)
         
     return best_related_papers

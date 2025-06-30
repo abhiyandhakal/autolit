@@ -7,6 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 from app.services.keywords import keyword_gen
 from app.services.paper_retrieval import retrieve_papers
+from app.services.top_paper_retrieval import retrieve_relevant_papers
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -44,6 +45,9 @@ title = "Feasibility of Artificial Intelligence Driven Analysis in the Context o
 abstract = "We proposed an innovative solution through an Artificial Intelligence driven legal analysis customized to the utility of the Nepalese legal context. Using advanced machine learning (ML) models and Retrieval-Augmented Generation (RAG) techniques, the research provides legal insights, streamlines judicial processes, and enhances accessibility to legal information. The legal documents were processed to convert into JSON format, and then to convert into vector data. GPT-4o was used for query expansion and response generation, whereas text embeddings were generated through text-embedding-ada-002. Key features include efficient document retrieval and query expansion for enhanced search precision. The model performs well across different query types, achieving an 𝐹1 score of 0.797 for rule-recall, 0.857 for rhetorical understanding, and 0.875 for interpretation-based queries. This work marks a significant step towards integrating AI into the legal domain of Nepal."
 
 keywords = keyword_gen(title, abstract)
+
+print(keywords)
+
 papers_unfiltered = []
 for keyword in keywords:
     papers_unfiltered = papers_unfiltered + retrieve_papers(keyword=keyword)
@@ -56,7 +60,9 @@ for paper in papers_unfiltered:
         papers.append(paper)
         seen_ids.add(paper['id'])
 
-print("papers count",len(papers))
+top_papers = retrieve_relevant_papers(title=title, abstract=abstract, related_papers=papers)
 
-# __import__('pprint').pprint(cluster_papers(papers))
-clustered = cluster_papers(papers)
+print("papers count", len(top_papers))
+#
+__import__('pprint').pprint(cluster_papers(papers))
+# # clustered = cluster_papers(papers)
