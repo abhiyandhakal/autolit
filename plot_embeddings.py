@@ -97,30 +97,22 @@ data_minilm = np.array([0.15479067, 0.28961575, 0.2331697, 0.19001873, 0.1794992
  0.40167156, 0.39588568, 0.36354613, 0.38889295, 0.37528166, 0.42521727,
  0.3402003, 0.27311492, 0.42466915, 0.4913197])
 
-# Create subplots
-fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+# Data lengths
+n_tfidf = len(data_tfidf)
+n_specter2 = len(data_specter2)
+n_minilm = len(data_minilm)
 
-# Generate box plots
-axes[0].boxplot(data_tfidf, vert=False)
-axes[0].set_title('TFIDF Embeddings')
-axes[0].set_xlabel('Similarity Value')
-axes[0].set_yticklabels([''])
-axes[0].grid(True)
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(range(n_tfidf), data_tfidf, label='TFIDF Embeddings')
+plt.plot(range(n_specter2), data_specter2, label='Specter2 Embeddings')
+plt.plot(range(n_minilm), data_minilm, label='all-MiniLM-L6-v2 Embeddings')
 
-axes[1].boxplot(data_specter2, vert=False)
-axes[1].set_title('Specter2 Embeddings')
-axes[1].set_xlabel('Similarity Value')
-axes[1].set_yticklabels([''])
-axes[1].grid(True)
+plt.xlabel('Index')
+plt.ylabel('Embedding Value')
+plt.title('Comparison of Embedding Values')
+plt.legend()
+plt.grid(True)
+plt.savefig('embeddings_comparison.png')
 
-axes[2].boxplot(data_minilm, vert=False)
-axes[2].set_title('all-MiniLM-L6-v2 Embeddings')
-axes[2].set_xlabel('Similarity Value')
-axes[2].set_yticklabels([''])
-axes[2].grid(True)
-
-# Adjust layout and save
-plt.tight_layout()
-plt.savefig('embeddings_boxplots.png')
-
-print("Separate boxplots 'embeddings_boxplots.png' created.")
+print("Line graph 'embeddings_comparison.png' created.")
